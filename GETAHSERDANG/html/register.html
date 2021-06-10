@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/depositori.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>WELCOME TO KEDAI GETAH SERDANG</h1>
+	</div>
+	<div class="topnavbar">
+		<a href="login.html" class="right">Login</a>
+		<a href="../index.html"class="left">Home</a>
+	</div>
+
+	<div class="main">
+		<center><img src="../images/kedaigetahserdang.png"></center>
+		<div class="container">
+			<form name="registerForm" action="../php/register.php" onsubmit="return validateRegForm()" method="post">
+				<div class="row">
+					<div class="col-25">
+						<label for="fname">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idname" name="name" placeholder="Your name..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Your email..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lphone">Phone</label>
+					</div>
+					<div class="col-75">
+						<input type="tel" id="idphone" name="phone" placeholder="Your phone number..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="address">Address</label>
+					</div>
+					<div class="col-75">
+						<select name="address" id="idaddress">
+							<option value="noselection">Please select your address</option>
+							<option value="Kampung Air Puteh">Kampung Air Puteh</option>
+							<option value="Serdang">Serdang</option>
+							<option value="Batu Hampar">Batu Hampar</option>
+							<option value="Permatang Kerat Telunjuk">Permatang Kerat Telunjuk</option>
+							<option value="Selama Perak">Selama Perak</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lpassword">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="passworda" placeholder="Your password..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lpassword">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpassb" name="passwordb" placeholder="Re-enter password">
+					</div>
+				</div>
+				<div class="row">
+					<div><input type="submit" value="Submit"></div>
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="bottomnavbar">
+		<center><p style="color:black;">Application for Kedai Getah Serdang</p></center>
+	</div>
+
+</body>
+
+</html>
